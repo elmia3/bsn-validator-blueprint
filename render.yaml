@@ -3,26 +3,5 @@ services:
     name: bsn-validator-dev
     env: docker
     image:
-      url: docker.io/appieelmi/bsn-validator:dev
-    plan: free
-
-  - type: web
-    name: bsn-validator-test
-    env: docker
-    image:
-      url: docker.io/appieelmi/bsn-validator:test
-    plan: free
-
-  - type: web
-    name: bsn-validator-acc
-    env: docker
-    image:
-      url: docker.io/appieelmi/bsn-validator:acc
-    plan: free
-
-  - type: web
-    name: bsn-validator-prod
-    env: docker
-    image:
-      url: docker.io/appieelmi/bsn-validator:prod
+      url: appieelmi/bsn-validator:dev
     plan: free
